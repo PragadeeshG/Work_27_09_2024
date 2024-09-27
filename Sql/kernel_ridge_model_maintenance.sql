@@ -1,0 +1,15 @@
+create table if not exists kernel_ridge_model_maintenance(
+kernel_device_id Integer not null,
+non_parametric varchar(255) null,
+interpolation varchar(255) null,
+marginalization varchar(255) null,
+hyper_params varchar(255) null,
+mean_function varchar(255) null,
+kernel_function varchar(255) null,
+distributions_active char null,
+prior_dist varchar(255) null,
+posterior_dist varchar(255) null,
+augumented_prediction varchar(255) null,
+rational_quadratic varchar(255) null,
+status varchar(255) null,
+constraint kernel_ridge_model_maintenance_pk primary key(kernel_device_id));
